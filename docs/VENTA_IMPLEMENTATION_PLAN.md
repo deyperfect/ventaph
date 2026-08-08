@@ -21,7 +21,7 @@
 - [ ] Verify navigation between routes
 - [x] Install Zustand
 - [ ] Configure Zustand
-- [ ] Install Axios
+- [x] Install Axios
 - [x] Configure ESLint
 - [ ] Configure frontend environment variables
 - [x] Establish frontend directory structure
@@ -31,17 +31,21 @@
 
 ### 1.3 Backend Setup
 
-- [ ] Initialize Node.js application
-- [ ] Install Express
-- [ ] Install Mongoose
+- [x] Initialize Node.js application
+- [x] Install Express
+- [x] Install Mongoose
+- [x] Install dotenv
+- [x] Install CORS
 - [ ] Install JWT authentication dependencies
 - [ ] Install bcrypt
+- [x] Install and configure ESLint
 - [ ] Configure environment variables
 - [ ] Configure Express middleware
-- [ ] Configure MongoDB connection
+- [x] Configure MongoDB connection
 - [ ] Establish backend directory structure
-- [ ] Verify API server
-- [ ] Verify MongoDB connection
+- [x] Verify linting
+- [x] Verify backend API server
+- [x] Verify MongoDB connection
 
 ### 1.4 Development Environment
 
