@@ -3,6 +3,11 @@ import dns from 'node:dns';
 import express from 'express';
 import cors from 'cors';
 import connectDatabase from './src/config/database.js';
+import userRoutes from './src/routes/userRoutes.js';
+import listingRoutes from './src/routes/listingRoutes.js';
+import conversationRoutes from './src/routes/conversationRoutes.js';
+import messageRoutes from './src/routes/messageRoutes.js';
+import errorHandler from './src/middleware/errorHandler.js';
 
 dns.setServers(['8.8.8.8', '1.1.1.1'])
 
@@ -17,6 +22,15 @@ app.get('/', (req, res) => {
     message: 'Venta API is running',
   });
 });
+
+// Routes
+app.use("/api/users", userRoutes);
+app.use("/api/listings", listingRoutes);
+app.use("/api/conversations", conversationRoutes);
+app.use("/api/conversations", messageRoutes);
+
+// Error handler 
+app.use(errorHandler);
 
 const startServer = async () => {
   await connectDatabase();
